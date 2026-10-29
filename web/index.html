@@ -149,13 +149,15 @@ select{border:1px solid var(--line);border-radius:6px;min-height:40px}
 footer{max-width:none;border-top:1px solid var(--line)}
 .teste{border-top:1px solid var(--line)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .quiz,:root:not([data-theme="light"]) .grupo,:root:not([data-theme="light"]) .lista,:root:not([data-theme="light"]) .tabw{box-shadow:none}}
+header.bar a.inst{color:var(--muted);text-decoration:none}header.bar a.inst:hover{color:var(--ink);text-decoration:underline}
+.teste{max-width:none}
 </style>
 </head>
 <body>
 
 <header class="bar"><div class="in">
   <span class="marca">Radar de Fundos</span>
-  <span class="inst">TCC · Engenharia de Computação · UTFPR Apucarana</span>
+  <a class="inst" href="https://github.com/HAMassaro/radar-de-fundos">Código no GitHub</a>
 </div></header>
 
 <div class="wrap">
@@ -216,7 +218,7 @@ footer{max-width:none;border-top:1px solid var(--line)}
 
 </details>
 
-<footer>Radar de Fundos · TCC, Engenharia de Computação, UTFPR Apucarana. Fonte: informes diários e cadastro da CVM, 74.244 registros, 6.737 elegíveis, 6.687 divididos em três grupos pelo K-Means. Cotas já descontam taxas, antes de impostos.</footer>
+<footer>Trabalho de Conclusão de Curso de Hugo Antonio Massaro, Engenharia de Computação, UTFPR Câmpus Apucarana, 2026. Orientador: Prof. Fábio Irigon Pereira. Os dados vêm do Portal de Dados Abertos da CVM, com cotas até dezembro de 2025. Os retornos já descontam as taxas dos fundos, mas não o imposto de renda.</footer>
 </div>
 
 <script>
@@ -326,7 +328,8 @@ function render(){
   const cards=familias(perfil).slice().sort((a,b)=>((a.f[9]?1:0)-(b.f[9]?1:0))||k[1]*(a.f[k[0]]-b.f[k[0]]));
   const vis=cards.slice(0,mostrar);
   document.getElementById('lista').innerHTML=vis.map(({f,outros})=>{
-    const j='Este fundo pertence ao grupo '+perfil+'. Nos últimos 756 pregões teve retorno anualizado de '+pct(f[3])+' (mediana do grupo '+pct(g.retorno_anual)+'), volatilidade de '+pct(f[4],2)+' (grupo '+pct(g.volatilidade_anual,2)+'), queda máxima de '+pct(f[5],2)+' (grupo '+pct(g.mdd_abs,2)+') e '+pct(f[6],0)+' dos dias positivos. Assimetria dos retornos: '+f[7].toLocaleString('pt-BR',{maximumFractionDigits:2})+' (negativa quando os dias ruins são mais fortes que os bons).';
+    const cmp=(v,m,maior,menor)=>v>m*1.15?maior:v<m*0.85?menor:'parecido com o do grupo';
+    const j='Está no grupo '+perfil+'. Nos últimos três anos rendeu '+pct(f[3])+' ao ano ('+cmp(f[3],g.retorno_anual,'acima','abaixo')+(cmp(f[3],g.retorno_anual,1,1)===1?' da mediana do grupo, '+pct(g.retorno_anual):'')+'). A oscilação foi de '+pct(f[4],2)+' ao ano ('+cmp(f[4],g.volatilidade_anual,'maior que a típica do grupo','menor que a típica do grupo')+'), a maior queda desde um pico foi de '+pct(f[5],2)+' e '+pct(f[6],0)+' dos dias fecharam no positivo.';
     const vs=outros.length?'<details class="vers"><summary>'+outros.length+(outros.length>1?' outras classes':' outra classe')+' do mesmo fundo (taxas ou público diferentes)</summary><ul>'+outros.map(o=>'<li>'+esc(nome(o[1]))+' · '+pct(o[3])+' a.a., volatilidade '+pct(o[4],2)+' · código CVM '+o[0]+'</li>').join('')+'</ul></details>':'';
     return '<div class="f"><div class="nm">'+esc(nome(f[1]))+'<span class="cl">'+esc(f[2])+' · código CVM '+f[0]+'</span>'+(f[8]>0.2?'<span class="flag">Cota sem variação em '+pct(f[8],0)+' dos dias: métricas menos confiáveis</span>':'')+(f[9]?'<span class="flag">Mais da metade do retorno veio de poucos dias isolados; por isso aparece no fim da lista</span>':'')+'</div>'
     +'<div class="bars">'+barra('retorno a.a.',pct(f[3]),pos(f[3],R[3]))+barra('volatilidade',pct(f[4],2),pos(f[4],R[4]))+barra('queda máxima',pct(f[5],2),pos(f[5],R[5]))+barra('dias positivos',pct(f[6],0),pos(f[6],R[6]))+'</div>'
@@ -335,7 +338,7 @@ function render(){
   const m=document.getElementById('mais');m.hidden=mostrar>=cards.length;
   m.textContent='Mostrar mais 15';
   document.getElementById('cont').textContent='Exibindo '+vis.length+' de '+cards.length.toLocaleString('pt-BR')+' fundos (versões do mesmo fundo agrupadas; '+arr.length.toLocaleString('pt-BR')+' classes no total).';
-  document.getElementById('acs').textContent=acesso==='P'?'Mostrando todas as '+DADOS.fundos[perfil].length.toLocaleString('pt-BR')+' classes do grupo.':'Mostrando '+arr.length.toLocaleString('pt-BR')+' das '+DADOS.fundos[perfil].length.toLocaleString('pt-BR')+' classes do grupo. As demais são restritas a investidores '+(acesso==='G'?'qualificados ou profissionais (patrimônio aplicado acima de R$ 1 milhão ou R$ 10 milhões, ou certificação)':'profissionais')+', ou não informam o público-alvo.';
+  document.getElementById('acs').textContent=acesso==='P'?'Mostrando todos os fundos do grupo.':'Mostrando '+arr.length.toLocaleString('pt-BR')+' de '+DADOS.fundos[perfil].length.toLocaleString('pt-BR')+'. Os outros só podem ser comprados por investidores '+(acesso==='G'?'qualificados (mais de R$ 1 milhão aplicado ou certificação) ou profissionais':'profissionais (mais de R$ 10 milhões aplicados)')+'.';
 }
 </script>
 
