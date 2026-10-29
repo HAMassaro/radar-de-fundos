@@ -2,7 +2,7 @@
 
 Código do TCC "Sistema de recomendação de fundos de investimento baseado em clusterização por aprendizado de máquina com dados públicos da CVM", de Hugo Antonio Massaro (Engenharia de Computação, UTFPR, Câmpus Apucarana, 2026). Orientador: Prof. Fábio Irigon Pereira.
 
-Interface publicada: https://radar-de-fundos.vercel.app
+Interface publicada: https://radar-de-fundos-gules.vercel.app
 
 ## Dados
 
