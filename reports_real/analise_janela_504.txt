@@ -1,0 +1,8 @@
+fundos com 504 pregoes: 6702 | em comum com a janela de 756: 6687
+tamanhos 504: perfil; Moderado       2525; Arrojado       2362; Conservador    1815
+Silhouette 504: 0.371 | ARI 504 x 756: 0.861 | mesmo perfil: 6376 (95.3%)
+perfil       Arrojado  Conservador  Moderado
+p756                                        
+Arrojado         2237            1        51
+Conservador         2         1695        24
+Moderado          119          114      2444

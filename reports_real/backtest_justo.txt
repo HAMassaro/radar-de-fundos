@@ -1,0 +1,6 @@
+CDI 2024: 10.88%
+k=3; universo com preço em 2024: 4684 fundos
+
+Conservador: K-Means N=78 ret=11.97% sharpe=3.79 | aleatório do grupo (200 sorteios) ret mediano=10.69% [p5 10.19%, p95 11.11%] sharpe mediano=-1.05 | menor volatilidade N=78 ret=8.21% sharpe=-2.09
+Moderado: K-Means N=113 ret=3.49% sharpe=-1.62 | aleatório do grupo (200 sorteios) ret mediano=5.26% [p5 3.45%, p95 6.81%] sharpe mediano=-1.78 | menor volatilidade N=113 ret=8.80% sharpe=-2.34
+Arrojado: K-Means N=63 ret=0.67% sharpe=-0.91 | aleatório do grupo (200 sorteios) ret mediano=-5.67% [p5 -9.79%, p95 -0.05%] sharpe mediano=-1.48 | menor volatilidade N=63 ret=7.76% sharpe=-1.98

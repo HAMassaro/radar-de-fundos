@@ -1,0 +1,4 @@
+CDI acumulado no período: 10.88%
+Sharpe anualizado (excesso sobre CDI): ingênua -1.33 | K-Means Moderado -1.53
+Carteira ingênua (10 fundos): retorno 2024 = -2.06%
+Carteira K-Means Moderado (114 fundos): retorno 2024 = 3.37%

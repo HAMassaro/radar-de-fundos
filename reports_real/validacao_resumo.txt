@@ -1,0 +1,7 @@
+k pela regra (Silhouette>=0,30 e maior Calinski-Harabasz): 2 | k adotado: 3
+ARI vs ANBIMA: 0.1628
+Silhouette K-Means 5D: 0.3965
+Silhouette tercis de volatilidade: 0.3216
+Silhouette quartis de volatilidade: 0.2407
+Variância explicada PCA 2D: 73.38%
+Mann-Whitney significativos: 6/6

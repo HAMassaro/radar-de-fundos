@@ -1,0 +1,53 @@
+fundos agrupados: 6687
+tamanhos: Conservador 1721, Moderado 2677, Arrojado 2289
+
+medianas por grupo:
+             retorno_anual  volatilidade_anual  mdd_abs  assimetria  consistencia
+perfil                                                                           
+Conservador         0.1271              0.0016   0.0011     -0.3091        0.9934
+Moderado            0.1093              0.0408   0.0405     -0.0521        0.5873
+Arrojado            0.1354              0.1572   0.1877     -0.0005        0.5198
+
+delta de Cliff (Mann-Whitney):
+  assimetria Conservador x Moderado: -0.63
+  assimetria Conservador x Arrojado: -0.77
+  assimetria Moderado x Arrojado: -0.16
+  consistencia Conservador x Moderado: 0.98
+  consistencia Conservador x Arrojado: 1.00
+  consistencia Moderado x Arrojado: 0.81
+
+correlacao de Spearman:
+                    retorno_anual  volatilidade_anual  mdd_abs  assimetria  consistencia
+retorno_anual                1.00                0.03    -0.06       -0.03          0.15
+volatilidade_anual           0.03                1.00     0.96        0.47         -0.93
+mdd_abs                     -0.06                0.96     1.00        0.41         -0.91
+assimetria                  -0.03                0.47     0.41        1.00         -0.54
+consistencia                 0.15               -0.93    -0.91       -0.54          1.00
+
+K-Means x tercis de volatilidade:
+volatilidade_anual    T1    T2    T3
+perfil                              
+Conservador         1698    23     0
+Moderado             530  2108    39
+Arrojado               1    98  2190
+ARI K-Means x tercis: 0.728 | fundos em grupo diferente: 691 (10.3%)
+Moderado no tercil de menor volatilidade: 530
+                    moderado_T1  conservador_T1
+retorno_anual            0.1130          0.1272
+volatilidade_anual       0.0182          0.0015
+mdd_abs                  0.0135          0.0010
+assimetria              -0.0940         -0.3020
+consistencia             0.6931          0.9934
+CLASSE_ANBIMA
+Multimercados Livre                         144
+Multimercados Invest. no Exterior            68
+Renda Fixa Duração Livre Crédito Livre       61
+Renda Fixa Duração Livre Grau de Invest.     56
+
+PCA: variancia [0.5251, 0.2088] total 0.7338
+cargas:
+     retorno_anual  volatilidade_anual  mdd_abs  assimetria  consistencia
+PC1           0.05                0.58     0.56        0.27         -0.52
+PC2           0.96                0.09    -0.17        0.20          0.10
+
+estabilidade: 20 sementes ARI 0.994 a 1.000 | 30 subamostras de 80% mediana 0.991 minimo 0.978

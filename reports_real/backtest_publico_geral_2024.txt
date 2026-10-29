@@ -1,0 +1,28 @@
+CDI 2024: 10.88% | fundos elegiveis no corte: 4688 | com features: 2619 | com cota no ano: 2619
+
+Conservador (grupo com 854 fundos)
+  regra A retorno passado: N=53 ret=12.44% sharpe=2.45 excesso_med=1.40% desv_exc=0.57%
+  regra B retorno/volatilidade: N=53 ret=11.84% sharpe=1.50 excesso_med=0.87% desv_exc=0.58%
+  regra C menor drawdown: N=53 ret=11.32% sharpe=0.75 excesso_med=0.40% desv_exc=0.53%
+  regra D menor volatilidade: N=53 ret=10.92% sharpe=0.07 excesso_med=0.04% desv_exc=0.53%
+  sorteios (200, N=53): mediana=10.51% p5=9.82% p95=11.05%
+  menor volatilidade do universo N=53: ret=9.34% sharpe=-43.80
+
+Moderado (grupo com 1074 fundos)
+  regra A retorno passado: N=89 ret=2.96% sharpe=-1.61 excesso_med=-7.28% desv_exc=4.53%
+  regra B retorno/volatilidade: N=89 ret=5.21% sharpe=-1.35 excesso_med=-5.15% desv_exc=3.81%
+  regra C menor drawdown: N=89 ret=5.29% sharpe=-1.38 excesso_med=-5.08% desv_exc=3.68%
+  regra D menor volatilidade: N=89 ret=4.82% sharpe=-1.50 excesso_med=-5.53% desv_exc=3.69%
+  sorteios (200, N=89): mediana=5.46% p5=3.82% p95=7.34%
+  menor volatilidade do universo N=89: ret=9.62% sharpe=-43.35
+
+Arrojado (grupo com 691 fundos)
+  regra A retorno passado: N=55 ret=2.35% sharpe=-0.79 excesso_med=-7.53% desv_exc=9.49%
+  regra B retorno/volatilidade: N=55 ret=4.02% sharpe=-0.78 excesso_med=-6.05% desv_exc=7.80%
+  regra C menor drawdown: N=55 ret=-0.69% sharpe=-1.55 excesso_med=-10.73% desv_exc=6.94%
+  regra D menor volatilidade: N=55 ret=-1.29% sharpe=-1.75 excesso_med=-11.37% desv_exc=6.48%
+  sorteios (200, N=55): mediana=-6.66% p5=-11.27% p95=-0.17%
+  menor volatilidade do universo N=55: ret=9.38% sharpe=-44.34
+
+ingenua 10 fundos: ret=8.41% sharpe=-35.43 excesso_med=-2.24% desv_exc=0.06% pior dia 2024-04-09 0.03%
+cotas corrigidas como erro de digitacao: 0 | fundos com variacao diaria >50% restante: 3

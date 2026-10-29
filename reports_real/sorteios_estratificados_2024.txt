@@ -1,0 +1,4 @@
+Ano 2024
+  Conservador: carteira 12.60% | sorteios estratificados mediana 10.82% p5 10.47% p95 11.15% | fracao de sorteios abaixo da carteira 100%
+  Moderado: carteira 3.37% | sorteios estratificados mediana 2.04% p5 0.95% p95 3.17% | fracao de sorteios abaixo da carteira 98%
+  Arrojado: carteira -0.02% | sorteios estratificados mediana -6.96% p5 -10.06% p95 -4.10% | fracao de sorteios abaixo da carteira 97%

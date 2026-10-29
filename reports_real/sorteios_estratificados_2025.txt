@@ -1,0 +1,4 @@
+Ano 2025
+  Conservador: carteira 15.62% | sorteios estratificados mediana 14.47% p5 14.07% p95 14.75% | fracao de sorteios abaixo da carteira 100%
+  Moderado: carteira 19.69% | sorteios estratificados mediana 17.04% p5 16.08% p95 18.29% | fracao de sorteios abaixo da carteira 100%
+  Arrojado: carteira 19.28% | sorteios estratificados mediana 14.42% p5 10.14% p95 20.80% | fracao de sorteios abaixo da carteira 84%

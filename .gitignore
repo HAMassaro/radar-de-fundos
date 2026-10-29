@@ -1,0 +1,8 @@
+raw/
+registro_fundo_classe/
+zips_cvm/
+*.db
+__pycache__/
+.DS_Store
+.env*
+.vercel/

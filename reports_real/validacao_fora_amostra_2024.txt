@@ -1,0 +1,11 @@
+Ano 2024: fundos com cota suficiente no ano: 4655
+Medianas realizadas no ano (vol, queda maxima, dias positivos, retorno):
+  Conservador: n=1275 vol=0.14% mdd=0.00% cons=99.6% ret=10.83%
+  Moderado: n=2005 vol=4.18% mdd=3.05% cons=56.3% ret=6.30%
+  Arrojado: n=1375 vol=14.49% mdd=14.83% cons=48.4% ret=-11.98%
+Spearman entre perfil e vol realizada: 0.88; com queda realizada: 0.86
+Terco de menor volatilidade no treino: no Moderado n=287, no Conservador n=1258
+  volatilidade: Moderado 1.87% x Conservador 0.13% (p=5.2e-121)
+  queda maxima: Moderado 0.81% x Conservador 0.00% (p=1.0e-125)
+  dias positivos: Moderado 68.50% x Conservador 99.61% (p=2.3e-139)
+  retorno: Moderado 8.99% x Conservador 10.84% (p=8.7e-23)

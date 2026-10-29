@@ -1,0 +1,17 @@
+CDI 2024: 10.88%
+
+Conservador | A retorno passado (top3/classe): N=78 ret=11.97% sharpe=3.79
+Conservador | B retorno/volatilidade (top3/classe): N=78 ret=11.43% sharpe=4.30
+Conservador | C menor drawdown (top3/classe): N=78 ret=11.43% sharpe=1.43
+Conservador | D menor volatilidade (top3/classe): N=78 ret=11.19% sharpe=0.81
+
+Moderado | A retorno passado (top3/classe): N=113 ret=3.49% sharpe=-1.62
+Moderado | B retorno/volatilidade (top3/classe): N=113 ret=4.78% sharpe=-1.71
+Moderado | C menor drawdown (top3/classe): N=113 ret=5.65% sharpe=-1.43
+Moderado | D menor volatilidade (top3/classe): N=113 ret=4.20% sharpe=-1.82
+
+Arrojado | A retorno passado (top3/classe): N=63 ret=0.67% sharpe=-0.91
+Arrojado | B retorno/volatilidade (top3/classe): N=63 ret=-1.28% sharpe=-1.25
+Arrojado | C menor drawdown (top3/classe): N=63 ret=1.55% sharpe=-1.21
+Arrojado | D menor volatilidade (top3/classe): N=63 ret=-0.79% sharpe=-1.59
+
