@@ -15,11 +15,11 @@ import sqlite3
 from pathlib import Path
 import pandas as pd
 
-BASE = Path(__file__).resolve().parent  # roda a partir de data_real/
+BASE = Path(__file__).resolve().parent
 RAW = BASE / "raw"
 SCRATCH = Path(os.path.expanduser("~/tcc_scratch"))
 SCRATCH.mkdir(parents=True, exist_ok=True)
-DB_PATH = SCRATCH / "fundos_real.db"  # SQLite não escreve bem em pastas montadas via FUSE
+DB_PATH = SCRATCH / "fundos_real.db"
 CUTOFF_NEW_SCHEMA = "202312"  # primeiro mês no schema novo
 
 

@@ -1,0 +1,22 @@
+CDI 2025: 14.38% | CDI anualizado na janela de treino: 12.09%
+
+Conservador (grupo com 1484 fundos)
+  carteira do sistema (3 por classe) N=83: ret=15.62% sharpe=3.35
+  10 de menor volatilidade N=10: ret=11.92% sharpe=-27.13
+  10 de maior Sharpe no treino N=10: ret=18.74% sharpe=2.27
+  10 de maior retorno no treino N=10: ret=21.01% sharpe=2.89
+  sorteios de 10 fundos do grupo (200): mediana=14.12% p5=13.24% p95=14.79%
+
+Moderado (grupo com 2447 fundos)
+  carteira do sistema (3 por classe) N=112: ret=19.69% sharpe=1.37
+  10 de menor volatilidade N=10: ret=12.95% sharpe=-1.78
+  10 de maior Sharpe no treino N=10: ret=14.39% sharpe=0.01
+  10 de maior retorno no treino N=10: ret=20.02% sharpe=0.38
+  sorteios de 10 fundos do grupo (200): mediana=15.64% p5=10.29% p95=22.05%
+
+Arrojado (grupo com 1907 fundos)
+  carteira do sistema (3 por classe) N=78: ret=19.28% sharpe=0.51
+  10 de menor volatilidade N=10: ret=7.52% sharpe=-0.41
+  10 de maior Sharpe no treino N=10: ret=16.56% sharpe=0.20
+  10 de maior retorno no treino N=10: ret=14.79% sharpe=0.10
+  sorteios de 10 fundos do grupo (200): mediana=29.37% p5=16.86% p95=38.25%

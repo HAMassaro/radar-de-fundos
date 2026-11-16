@@ -27,8 +27,9 @@ Python 3.10.
 | 5 | `analise_janela.py` | sensibilidade com janela de 504 pregões |
 | 6 | `comparacao_algoritmos.py` | Ward, misturas gaussianas e DBSCAN |
 | 7 | `figuras_e_painel.py` | figuras e `painel_dados.json` usado pela interface |
+| 8 | `gerar_publico_alvo.py` | `publico_alvo.json`, usado no filtro por tipo de investidor |
 
-Análises complementares: `teste_redundancia.py`, `teste_pc1_tercis.py`, `teste_corte_mesmo_tamanho.py`, `sorteios_estratificados.py`, `validacao_fora_amostra.py`, `retorno_concentrado.py`, `backtest_publico_geral.py`.
+Análises complementares: `ari_anbima_nivel1.py`, `top10_por_perfil.py`, `teste_redundancia.py`, `teste_pc1_tercis.py`, `teste_corte_mesmo_tamanho.py`, `sorteios_estratificados.py`, `validacao_fora_amostra.py`, `retorno_concentrado.py`, `backtest_publico_geral.py`.
 
 API: `uvicorn api_real:app`. Interface estática: `web/index.html`.
 

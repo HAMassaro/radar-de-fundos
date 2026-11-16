@@ -18,7 +18,7 @@ from statsmodels.stats.multitest import multipletests
 
 SCRATCH = Path(os.path.expanduser("~/tcc_scratch"))
 DB_PATH = SCRATCH / "fundos_real.db"
-BASE = Path(__file__).resolve().parent  # data_real/
+BASE = Path(__file__).resolve().parent
 OUT = BASE / "reports_real"
 OUT.mkdir(exist_ok=True)
 
@@ -263,7 +263,6 @@ CDI_2024 = [("2024-01-02", 0.043739), ("2024-02-01", 0.041957), ("2024-03-21", 0
             ("2024-05-09", 0.039270), ("2024-09-19", 0.040168), ("2024-11-07", 0.041957),
             ("2024-12-12", 0.045513), ("2025-01-30", 0.049037), ("2025-03-20", 0.052531),
             ("2025-05-08", 0.054266), ("2025-06-20", 0.055131)]
-# CDI_2024 reproduz a serie 12 do SGS/BCB (taxa diaria, % a.d.) em 2024 e 2025: as taxas so mudam nas datas acima.
 
 
 def cdi_diario(index):
@@ -310,7 +309,7 @@ def run_backtest(con, cad):
     def port_returns(cols):
         cols = [c for c in cols if c in pivot.columns]
         rets = pivot[cols].ffill().pct_change(fill_method=None).dropna(how="all").fillna(0)
-        rets = rets[rets.index >= AVAL_INICIO]  # apenas retornos de 2024
+        rets = rets[rets.index >= AVAL_INICIO]  # so o ano avaliado
         return rets.mean(axis=1)
 
     r_ing = port_returns(ingenua)
